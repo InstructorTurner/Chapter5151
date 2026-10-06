@@ -6,4 +6,10 @@ public class StorageBay {
         pods[1] = new CargoPod();
         pods[2] = new CargoPod();
     }
+
+    public void displayManifest(){
+        for(CargoPod pod : pods){
+            System.out.println(pod.contents);
+        }
+    }
 }
